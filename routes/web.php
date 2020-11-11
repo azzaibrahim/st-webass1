@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test',function (){
+    return view('test');
+
+});
+$names= ['ahmed','ali'];
+$marks= [
+    'arabic'=>90,
+    'math'=>80,
+    'since'=>70,
+
+
+];
+Route::view('test1','test2',['name'=>'ahmed']);

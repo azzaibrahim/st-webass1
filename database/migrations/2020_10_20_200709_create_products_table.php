@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('QtyLnStock');
             $table->decimal('BuyPrice', 19, 0);
             $table->string('Msrp');
+
         });
     }
 
